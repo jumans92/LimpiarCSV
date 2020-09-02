@@ -2,7 +2,7 @@
 import os, errno, pandas as pd
 import csv, datetime, re
 
-path = "C:\\Users\\67801134\\Desktop\\CSV_DATA\\"
+path = "C:\\Users\\Desktop\\CSV_DATA\\"
 #voy a path donde tengo la carpeta CSV DATA con los CSV's a tratar
 
 dirs = os.listdir(path)
@@ -51,4 +51,4 @@ for file in dirs2:
         #print ("Meto esta fecha: " + fecha + " en una columna nueva del archivo: " + file)
         df = pd.read_csv("C:\\Users\\67801134\\.spyder-py3\\OUTPUT_CSV\\" + file)
         df['fecha'] = fecha
-        df.to_csv("C:\\Users\\67801134\\.spyder-py3\\OUTPUT_CSV\\" + file, index = False)
+        df.to_csv("C:\\Users\\.spyder-py3\\OUTPUT_CSV\\" + file, index = False)
